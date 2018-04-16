@@ -1,0 +1,29 @@
+#ifndef CALGUI_H
+#define CALGUI_H
+
+#include <QMainWindow>
+
+namespace Ui {
+class CalGUI;
+}
+
+class CalGUI : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit CalGUI(QWidget *parent = 0);
+    ~CalGUI();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_5_clicked();
+
+private:
+    Ui::CalGUI *ui;
+};
+
+#endif // CALGUI_H
